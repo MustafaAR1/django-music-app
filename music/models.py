@@ -7,6 +7,9 @@ class Album(models.Model):
     genre = models.CharField(max_length=100)
     album_logo = models.CharField(max_length=1000)
 
+    def __str__(self): #string representation of the object for db
+        return self.album_title  
+
 
 
 
